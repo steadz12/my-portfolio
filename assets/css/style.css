@@ -1346,6 +1346,20 @@ main {
   font-weight: var(--fw-300);
 }
 
+.publication-icon-link {
+  display: block;
+  flex-shrink: 0;
+  transition: var(--transition-1);
+}
+
+.publication-icon-link:hover .publication-icon {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.publication-icon-link:hover .publication-icon ion-icon {
+  color: var(--smoky-black);
+}
+
 
 /*-----------------------------------*\
   #NEWS
