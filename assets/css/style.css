@@ -1433,6 +1433,29 @@ main {
   font-weight: var(--fw-300);
 }
 
+.news-icon-link {
+  display: block;
+  flex-shrink: 0;
+  transition: var(--transition-1);
+}
+
+.news-icon-link:hover .news-icon {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.news-icon-link:hover .news-icon ion-icon {
+  color: var(--smoky-black);
+}
+
+.news-title a {
+  color: var(--white-2);
+  transition: var(--transition-1);
+}
+
+.news-title a:hover {
+  color: var(--orange-yellow-crayola);
+}
+
 
 
 /*-----------------------------------*\
