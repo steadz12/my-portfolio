@@ -15,7 +15,7 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css?v=2">
 
   <!--
     - google font link
@@ -67,9 +67,11 @@
 
           <li class="contact-item">
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <a href="mailto:steadz12@gmail.com" class="icon-box-link">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+            </a>
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
@@ -81,9 +83,11 @@
 
           <li class="contact-item">
 
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
+            <a href="https://www.researchgate.net/profile/Sagar-Mehta-6" class="icon-box-link" target="_blank">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+            </a>
 
             <div class="contact-info">
               <p class="contact-title">Research</p>
@@ -96,9 +100,11 @@
 
           <li class="contact-item">
 
-            <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
+            <a href="https://www.linkedin.com/in/sagar-mehta-a3a149b1/" class="icon-box-link" target="_blank">
+              <div class="icon-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </div>
+            </a>
 
             <div class="contact-info">
               <p class="contact-title">Social</p>
@@ -194,7 +200,7 @@
 
         <section class="about-text">
           <p>
-            I build things that move, sense, decide—and ship.
+            I build things that move, sense, think—and ship.
           </p>
 
           <p>
@@ -219,15 +225,15 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/icon-product-dev.svg" alt="product development icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Product Development</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Taking hardware products from concept to certified, deployable systems through rapid prototyping and
+                  validation.
                 </p>
               </div>
 
@@ -236,14 +242,15 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-sensor.svg" alt="sensor integration icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Sensor Integration</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Integrating, calibrating, and validating sensors across hardware and software stacks for reliable
+                  system performance.
                 </p>
               </div>
 
@@ -252,14 +259,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-robotics.svg" alt="robotics control systems icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Robotics Control Systems</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Designing and implementing microprocessor control logic for embedded and real-time systems.
                 </p>
               </div>
 
@@ -268,14 +275,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/icon-gui.svg" alt="embedded interface icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">Embedded Interface Development</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Designing user-centric GUIs to streamline workflows and improve system usability and performance.
                 </p>
               </div>
 
@@ -514,15 +521,15 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Product</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Energy Optimization</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Builds</button>
             </li>
 
           </ul>
@@ -546,15 +553,15 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Product</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Energy Optimization</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Builds</button>
               </li>
 
             </ul>
@@ -563,7 +570,7 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="product">
               <a href="#">
 
                 <figure class="project-img">
@@ -578,10 +585,29 @@
 
                 <p class="project-category">Product Development</p>
 
+                <ul class="project-details">
+                  <li class="project-details-item">Spearheaded the end-to-end development of the Alcohol Screening
+                    Device, from concept to mass manufacturing.</li>
+                  <li class="project-details-item">Led cross-functional efforts including sensor selection, MCU
+                    integration, UI/UX development, and mechanical design.</li>
+                  <li class="project-details-item">Successfully guided the project through prototyping, regulatory
+                    testing, and final production launch.</li>
+                  <li class="project-details-item">Optimized hardware and software to ensure high performance, energy
+                    efficiency, and regulatory compliance.</li>
+                  <li class="project-details-item">Collaborated directly with stakeholders to refine product
+                    requirements based on user feedback and industry standards.</li>
+                </ul>
+
+                <div class="project-gallery-images" style="display: none;">
+                  <img src="./assets/images/ALCOHOL-1.PNG" alt="Alcohol Screening Prototype">
+                  <img src="./assets/images/ALCOHOL-2.png" alt="Alcohol Screening Display">
+                  <img src="./assets/images/ALCOHOL-3.png" alt="Alcohol Screening Display">
+                </div>
+
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="product">
               <a href="#">
 
                 <figure class="project-img">
@@ -596,10 +622,27 @@
 
                 <p class="project-category">Product Development</p>
 
+                <ul class="project-details">
+                  <li class="project-details-item">Led the full-cycle development of a novel Marijuana Breath Test
+                    device, taking it from zero to one.</li>
+                  <li class="project-details-item">Managed critical technical decisions including sensor selection,
+                    hardware-software integration, and mechanical architecture.</li>
+                  <li class="project-details-item">Streamlined the breath collection methodology to ensure high-purity
+                    sample acquisition and accurate testing.</li>
+                  <li class="project-details-item">Partnered with Omega Laboratories, an industry leader, to validate
+                    and refine the collection technique and process flow.</li>
+                </ul>
+
+                <div class="project-gallery-images" style="display: none;">
+                  <img src="./assets/images/MTB-2.PNG" alt="Marijuana Breath Test Prototype">
+                  <img src="./assets/images/MTB-4.PNG" alt="Marijuana Breath Test Display">
+                  <img src="./assets/images/MTB-1.PNG" alt="Marijuana Breath Test Display">
+                </div>
+
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="builds">
               <a href="#">
 
                 <figure class="project-img">
@@ -614,10 +657,29 @@
 
                 <p class="project-category">Mechatronics</p>
 
+                <ul class="project-details">
+                  <li class="project-details-item">Contributed to the development of Canada's first large-scale concrete
+                    3D printer for micro-housing construction.</li>
+                  <li class="project-details-item">Designed and implemented advanced control algorithms for precise
+                    8-axis motion, printing coordination, and spatial awareness.</li>
+                  <li class="project-details-item">Developed custom software to translate G-code from open-source
+                    slicers into executable commands for the complex printing system.</li>
+                  <li class="project-details-item">Orchestrated the product development lifecycle, seamlessly
+                    integrating mechanical subsystems with robust software controls.</li>
+                </ul>
+
+                <div class="project-gallery-images" style="display: none;">
+                  <img src="./assets/images/CARPA-4.jpg" alt="Concrete 3D Printer View 1">
+                  <img src="./assets/images/CARPA-5.png" alt="Concrete 3D Printer View 2">
+                  <img src="./assets/images/CARPA-6.png" alt="Concrete 3D Printer View 3">
+                  <img src="./assets/images/CARPA-3.jpg" alt="Concrete 3D Printer View 4">
+                  <img src="./assets/images/CARPA-1.jpg" alt="Concrete 3D Printer View 5">
+                </div>
+
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" data-filter-item data-category="energy optimization">
               <a href="#">
 
                 <figure class="project-img">
@@ -632,10 +694,17 @@
 
                 <p class="project-category">Electronics</p>
 
+                <ul class="project-details">
+                  <li class="project-details-item">Led resource planning, requirements gathering, and task execution for
+                    the VFD Power Unit project.</li>
+                  <li class="project-details-item">Validated design integrity, operational efficiency, and unit
+                    performance through rigorous team collaboration and testing.</li>
+                </ul>
+
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="energy optimization">
               <a href="#">
 
                 <figure class="project-img">
@@ -649,6 +718,17 @@
                 <h3 class="project-title">Engine Intake Air Swirl Optimization</h3>
 
                 <p class="project-category">Research</p>
+
+                <ul class="project-details">
+                  <li class="project-details-item">Collaborated with Mahindra Navistar to optimize the air swirl ratio
+                    in diesel engine intakes.</li>
+                  <li class="project-details-item">Re-engineered the air intake geometry to maximize airflow efficiency
+                    and combustion stability.</li>
+                  <li class="project-details-item">Achieved a 30% increase in efficiency compared to the legacy design
+                    through rigorous iterative testing.</li>
+                  <li class="project-details-item">Enhanced fuel-air mixing and combustion completeness, significantly
+                    reducing emissions and improving thermal performance.</li>
+                </ul>
 
               </a>
             </li>
@@ -692,7 +772,9 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="https://formspree.io/f/xeeedpgo" method="POST" class="form" data-form>
+
+            <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -721,6 +803,53 @@
 
 
 
+
+  <!--
+    - #PROJECT MODAL
+  -->
+
+  <div class="modal-container" data-modal-container>
+
+    <div class="overlay" data-overlay></div>
+
+    <section class="testimonials-modal">
+
+      <button class="modal-close-btn" data-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="modal-img-wrapper">
+        <figure class="modal-avatar-box">
+          <img src="./assets/images/project-1.jpg" alt="Project Image" data-modal-img>
+          <div class="zoom-icon">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+        </figure>
+      </div>
+
+      <div class="modal-content">
+
+        <h4 class="h3 modal-title" data-modal-title>Project Title</h4>
+
+        <div class="modal-text" data-modal-text>
+          <p>Project details will appear here.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <!--
+    - #LIGHTBOX
+  -->
+  <div class="lightbox" data-lightbox>
+    <button class="lightbox-close-btn" data-lightbox-close-btn>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+    <img src="" alt="Project Image" class="lightbox-img" data-lightbox-img>
+  </div>
 
   <!--
     - custom js link
