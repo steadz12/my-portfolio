@@ -112,28 +112,9 @@ const testimonialsModalFunc = function () {
   document.body.classList.toggle("no-scroll");
 
   // Fix: Enforce layout constraints to prevent image overflow
+  // meaningful specific styles are now handled in CSS
   if (modalContainer.classList.contains("active")) {
-    const wrapper = document.querySelector(".modal-img-wrapper");
-    const avatarBox = document.querySelector(".modal-avatar-box");
-
-    if (wrapper) {
-      wrapper.style.overflow = "hidden";
-      wrapper.style.width = "350px";
-      wrapper.style.minWidth = "350px";
-      wrapper.style.flex = "0 0 350px";
-    }
-
-    if (avatarBox) {
-      avatarBox.style.width = "100%";
-      avatarBox.style.maxWidth = "100%";
-
-      const img = avatarBox.querySelector("img");
-      if (img) {
-        img.style.width = "100%";
-        img.style.height = "auto";
-        img.style.objectFit = "cover";
-      }
-    }
+    // Logic removed to allow CSS to control responsiveness
   }
 }
 
