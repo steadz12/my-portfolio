@@ -1985,20 +1985,12 @@ textarea.form-input::-webkit-resizer {
     /* Increased width significantly to make thumbnails bigger */
     width: 400px;
     margin: 0;
-    /* Make images scrollable for projects with multiple images */
-    max-height: 70vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+    /* Let the entire modal scroll instead of just the image column */
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding-right: 12px;
-    /* Scrollbar styling */
-    scrollbar-width: thin;
-    scrollbar-color: var(--orange-yellow-crayola) var(--onyx);
-  }
-
-  /* Custom scrollbar for modal image wrapper */
+  }  /* Custom scrollbar for modal image wrapper */
   .modal-img-wrapper::-webkit-scrollbar {
     width: 8px;
   }
@@ -2281,17 +2273,11 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 0;
     margin-right: 0;
     position: relative;
-    /* Make images scrollable for projects with multiple images */
-    max-height: 70vh;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
+    /* Let the entire modal scroll instead of just the image column */
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding-right: 12px;
-    /* Scrollbar styling */
-    scrollbar-width: thin;
-    scrollbar-color: var(--orange-yellow-crayola) var(--onyx);
   }
 
   .modal-img-wrapper::-webkit-scrollbar {

@@ -145,8 +145,21 @@ for (let i = 0; i < projectItems.length; i++) {
     modalImg.src = imgSrc;
     modalImg.alt = imgAlt;
 
-
     modalText.innerHTML = detailsHtml;
+
+    // Convert data-link spans to actual links in the modal safely
+    const links = modalText.querySelectorAll('[data-link]');
+    links.forEach(linkSpan => {
+      const a = document.createElement('a');
+      a.href = linkSpan.getAttribute('data-link');
+      a.target = '_blank';
+      a.innerHTML = linkSpan.innerHTML;
+      a.style.color = "var(--orange-yellow-crayola)";
+      a.style.textDecoration = "underline";
+      if (linkSpan.parentNode) {
+        linkSpan.parentNode.replaceChild(a, linkSpan);
+      }
+    });
 
     // Gallery Logic
     // 1. Remove any *extra* images added previously (keep the main one)
@@ -168,24 +181,31 @@ for (let i = 0; i < projectItems.length; i++) {
     const galleryImagesContainer = this.querySelector(".project-gallery-images");
 
     if (galleryImagesContainer) {
-      const galleryImages = galleryImagesContainer.querySelectorAll("img");
+      const galleryElements = galleryImagesContainer.querySelectorAll("img, video");
       const modalImgWrapper = document.querySelector(".modal-img-wrapper");
 
-      galleryImages.forEach(img => {
-        // Create a new figure/img structure similar to the main one
+      galleryElements.forEach(el => {
         const newFigure = document.createElement("figure");
-        newFigure.classList.add("modal-avatar-box"); // Re-use styling
+        newFigure.classList.add("modal-avatar-box");
 
-        const newImg = document.createElement("img");
-        newImg.src = img.src;
-        newImg.alt = img.alt || "Project Gallery Image";
+        if (el.tagName.toLowerCase() === 'img') {
+          const newImg = document.createElement("img");
+          newImg.src = el.src;
+          newImg.alt = el.alt || "Project Gallery Image";
+          newFigure.appendChild(newImg);
 
-        const zoomIcon = document.createElement("div");
-        zoomIcon.classList.add("zoom-icon");
-        zoomIcon.innerHTML = '<ion-icon name="search-outline"></ion-icon>';
-
-        newFigure.appendChild(newImg);
-        newFigure.appendChild(zoomIcon);
+          const zoomIcon = document.createElement("div");
+          zoomIcon.classList.add("zoom-icon");
+          zoomIcon.innerHTML = '<ion-icon name="search-outline"></ion-icon>';
+          newFigure.appendChild(zoomIcon);
+        } else if (el.tagName.toLowerCase() === 'video') {
+          const newVideo = document.createElement("video");
+          newVideo.src = el.src;
+          newVideo.controls = true;
+          newVideo.style.width = "100%";
+          newVideo.style.borderRadius = "14px";
+          newFigure.appendChild(newVideo);
+        }
 
         modalImgWrapper.appendChild(newFigure);
       });

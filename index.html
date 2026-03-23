@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no, date=no, email=no, address=no">
   <title>Sagar Mehta | Portfolio</title>
   <meta name="title" content="Sagar Mehta | Portfolio">
   <meta name="description"
@@ -34,7 +35,7 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css?v=3">
+  <link rel="stylesheet" href="./assets/css/style.css?v=6">
 
   <!--
     - google font link
@@ -152,6 +153,23 @@
 
           <li class="contact-item">
 
+            <a href="https://github.com/steadz12" class="icon-box-link" target="_blank">
+              <div class="icon-box">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+            </a>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/steadz12" class="contact-link"
+                target="_blank">steadz12</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
@@ -197,9 +215,7 @@
 
         <ul class="navbar-list">
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
@@ -214,11 +230,11 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>News</button>
+            <button class="navbar-link" data-nav-link>Patent</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link>Certifications</button>
           </li>
 
         </ul>
@@ -573,6 +589,10 @@
               <button data-filter-btn>Builds</button>
             </li>
 
+            <li class="filter-item">
+              <button data-filter-btn>Software</button>
+            </li>
+
           </ul>
 
           <div class="filter-select-box">
@@ -605,11 +625,48 @@
                 <button data-select-item>Builds</button>
               </li>
 
+              <li class="select-item">
+                <button data-select-item>Software</button>
+              </li>
+
             </ul>
 
           </div>
 
           <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="software">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/agentdesk_img.png" alt="AgentDesk" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AgentDesk: AI Workspace</h3>
+
+                <p class="project-category">Software</p>
+
+                <ul class="project-details">
+                  <li class="project-details-item">Built AgentDesk — an open source multi-agent AI productivity workspace where developers query their own docs, run calculations, and save memory from a single prompt</li>
+                  <li class="project-details-item">Implemented RAG, tool use, orchestration, and memory from scratch with no frameworks — every concept isolated in its own file and built to be read</li>
+                  <li class="project-details-item">Integrated MCP by building three standalone servers (calculator, filesystem, memory) so tools run as separate processes over the standard protocol</li>
+                  <li class="project-details-item">Made every backend swappable — LLM provider, vector store, and tools all sit behind provider interfaces, switchable with one environment variable</li>
+                  <li class="project-details-item">Open sourced with real demo data, a test suite, a CONTRIBUTING guide, and full docs so any developer can clone, understand, and extend it</li>
+                  <li class="project-details-item">
+                    <strong>Link:</strong> <span data-link="https://github.com/steadz12/agentdesk" style="color: var(--orange-yellow-crayola); text-decoration: underline; cursor: pointer;">View on GitHub</span>
+                  </li>
+                </ul>
+
+                <div class="project-gallery-images" style="display: none;">
+                  <video src="./assets/images/agentdesk_demo.mov" preload="metadata"></video>
+                </div>
+
+              </a>
+            </li>
 
             <li class="project-item  active" data-filter-item data-category="product">
               <a href="#">
@@ -885,6 +942,137 @@
 
 
       <!--
+        - #PATENT
+      -->
+
+      <article class="patent" data-page="patent" id="patent">
+
+        <header>
+          <h2 class="h2 article-title">Patent</h2>
+        </header>
+
+        <section class="patent-list">
+
+          <ul class="publication-items">
+
+            <li class="publication-item">
+              <a href="https://patents.google.com/patent/US20240415408A1/en" target="_blank" class="publication-icon-link">
+                <div class="publication-icon">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                </div>
+              </a>
+              <div class="publication-content">
+                <h3 class="publication-title">
+                  <a href="https://patents.google.com/patent/US20240415408A1/en" target="_blank">
+                    Contact-free breath analysis device and method
+                  </a>
+                </h3>
+                <p class="publication-journal" style="margin-top: 10px; line-height: 1.6; color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300);">
+                  <strong>Abstract:</strong> Apparatus and methods for contact-free breath analysis are provided. One aspect provides a pneumatic circuit that can be used for analyzing a contact-free breath sample or a breath sample provided through an inlet tube. Some aspects provide apparatus that can be incorporated into a rearview mirror or steering wheel of a vehicle, or used as a standalone unit.
+                </p>
+                <time class="publication-date" style="margin-top: 15px; display: inline-block;">Patent: US20240415408A1</time>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CERTIFICATIONS
+      -->
+
+      <article class="certifications" data-page="certifications" id="certifications">
+
+        <header>
+          <h2 class="h2 article-title">Certifications</h2>
+        </header>
+
+        <section class="certifications-list">
+
+          <ul class="publication-items">
+
+            <li class="publication-item">
+              <a href="#" class="publication-icon-link">
+                <div class="publication-icon">
+                  <ion-icon name="ribbon-outline"></ion-icon>
+                </div>
+              </a>
+              <div class="publication-content">
+                <h3 class="publication-title">
+                  <a href="#">Agentic AI</a>
+                </h3>
+                <p class="publication-journal" style="margin-top: 5px; color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300);">DeepLearning.AI</p>
+                <time class="publication-date" style="margin-top: 5px; display: inline-block;">Issued Mar 2026</time>
+                <time class="publication-date" style="margin-top: 5px; display: block;">Credential ID: 4fd856c6-9ba9-404d-b4f0-e60a2b96a902</time>
+              </div>
+            </li>
+
+            <li class="publication-item">
+              <a href="#" class="publication-icon-link">
+                <div class="publication-icon">
+                  <ion-icon name="ribbon-outline"></ion-icon>
+                </div>
+              </a>
+              <div class="publication-content">
+                <h3 class="publication-title">
+                  <a href="#">MCP: Build Rich-Context AI Apps with Anthropic</a>
+                </h3>
+                <p class="publication-journal" style="margin-top: 5px; color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300);">DeepLearning.AI</p>
+                <time class="publication-date" style="margin-top: 5px; display: inline-block;">Issued Feb 2026</time>
+                <time class="publication-date" style="margin-top: 5px; display: block;">Credential ID: 767a2c21-5cf4-40df-8868-7907a2de25b6</time>
+              </div>
+            </li>
+
+            <li class="publication-item">
+              <a href="#" class="publication-icon-link">
+                <div class="publication-icon">
+                  <ion-icon name="ribbon-outline"></ion-icon>
+                </div>
+              </a>
+              <div class="publication-content">
+                <h3 class="publication-title">
+                  <a href="#">Retrieval Augmented Generation (RAG)</a>
+                </h3>
+                <p class="publication-journal" style="margin-top: 5px; color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300);">DeepLearning.AI</p>
+                <p class="publication-journal" style="margin-top: 10px; line-height: 1.6; color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300);">Recently completed a course with DeepLearning.AI where I learned to systematically design production-ready Retrieval-Augmented Generation (RAG) systems. Gained...</p>
+                <time class="publication-date" style="margin-top: 10px; display: inline-block;">Issued Feb 2026</time>
+                <time class="publication-date" style="margin-top: 5px; display: block;">Credential ID: c6b06763-5cf2-4d3d-9c1e-e2f3fd67c4fd</time>
+              </div>
+            </li>
+
+            <li class="publication-item">
+              <a href="#" class="publication-icon-link">
+                <div class="publication-icon">
+                  <ion-icon name="ribbon-outline"></ion-icon>
+                </div>
+              </a>
+              <div class="publication-content">
+                <h3 class="publication-title">
+                  <a href="#">Rapid Prototyping and Quality Control</a>
+                </h3>
+                <p class="publication-journal" style="margin-top: 5px; color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300);">Faculty of Applied Sciences at Simon Fraser University</p>
+                <time class="publication-date" style="margin-top: 5px; display: inline-block;">Issued May 2018</time>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
         - #NEWS
       -->
 
@@ -1067,13 +1255,14 @@
     <button class="lightbox-close-btn" data-lightbox-close-btn>
       <ion-icon name="close-outline"></ion-icon>
     </button>
-    <img src="" alt="Project Image" class="lightbox-img" data-lightbox-img>
+    <!-- Use a transparent 1x1 pixel to prevent the Safari broken image icon -->
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="lightbox-img" data-lightbox-img>
   </div>
 
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js?v=2"></script>
 
   <!--
     - ionicon link
